@@ -3,43 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>signup</title>
-
-    <!-- stylesheets -->
+   <title>Justa-Call-Away(Signup(client))</title>
+    <link href="https:fonts.googleapis.com/css?family=open+Sans" ref="stylesheet">
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="signup.css" />
   </head>
 
   <body>
     <header class="header-wrapper">
       <div class="header">
-        <a href="" class="logo1"
-          ><img src="photos/logo1.png" alt="justa-call-away-black-logo"
-        /></a>
+        <a href="login.html" class="logo1">Register as a service Provider</a>
         <div class="login">
           <div>
-            <input
-              type="text"
-              style="width: 250px"
-              id="email"
-              placeholder="Enter email"
-            />
+            <input type="text" style="width: 250px" id="email" placeholder="Enter email"/>
           </div>
           <div>
-            <input
-              type="text"
-              style="width: 250px"
-              id="password"
-              placeholder="Password"
-            />
+            <input type="text" style="width: 250px" id="password" placeholder="Password"/>
           </div>
-          <button
-            type="submit"
-            class="btn"
-            id="login"
-            style="font-weight: bold"
-          >
-            Login
-          </button>
+          <a href="home.html" class="one">
+            <button type="submit" class="btn" id="login" style="font-weight: bold"> Login </button>
+          </a>
           <p>
             <span class="footer-text">Forgotten password?</span>
           </p>
@@ -48,11 +33,10 @@
     </header>
 
     <main class="main">
-      <a href=""
-        ><img
-          src="photos/african-male-plumber-fixing-sink-pipe-kitchen-124519826.webp"
-          alt="cartoon-plumber-jpeg"
-      /></a>
+      <a href="home.html"> 
+      <img
+          src="photos&videos/african-male-plumber-fixing-sink-pipe-kitchen-124519826.webp"
+          alt="cartoon-plumber-jpeg"/></a>
       <form id="form">
         <h2>Sign Up for free</h2>
         <div class="username">
@@ -61,21 +45,16 @@
         </div>
         <input type="text" id="email-1" placeholder="Email" required />
         <input type="text" id="password-1" placeholder="Password" required />
-        <input
-          type="text"
-          id="confirm-password"
-          placeholder="Re-enter password"
-          required
-        />
+        <input type="text" id="confirm-password" placeholder="Re-enter password" required/>
         <p class="form-text">
           By clicking Sign Up, you agree to our
           <span class="terms-conditions">Terms </span> and that you have read
           our <span class="terms-conditions">Data Policy</span>, including
           <span class="terms-conditions">Cookie Use</span>
         </p>
-        <button type="submit" class="btn" id="signup" style="font-weight: bold">
-          Sign Up
-        </button>
+       <a href="home.html" class="one">
+         <button type="submit" class="btn" id="signup" style="font-weight: bold"> Sign Up </button>
+       </a>
         <p class="form-text">
           Already have an account? <span class="terms-conditions">Log in</span>
         </p>
@@ -86,12 +65,30 @@
       </form>
     </main>
 
-    <footer class="footer-wrapper">
-      <div class="footer">
-        <p class="footer-text"><span>About Us</span></p>
-        <p class="footer-text"><span>Contact Us</span></p>
-        <p class="footer-text"><span>FAQs</span></p>
-      </div>
+    <footer>
+        <section class="footer-wrapper">
+            <div class="foot">
+                 <figure class="foot-logoo">
+                    <img src="./photos&videos/logo1.png" alt="JAC Logo" class="footlogo">
+                </figure>
+                <!-- <h5>JustA-Call-Away</h5> -->
+                 <div class="footer">
+                   <p class="footer-text"><span>About Us</span></p>
+                   <p class="footer-text"><span>Contact Us</span></p>
+                   <p class="footer-text"><span>FAQs</span></p>
+                 </div>
+                <div class="icons">
+                    <div class="icon-wrapper"><i class="fab fa-facebook"></i></div>
+                    <div class="icon-wrapper"><i class="fab fa-twitter"></i></div>
+                    <div class="icon-wrapper"><i class="fab fa-instagram"></i></div>
+                   <!-- <i class="fa-brands fa-facebook"></i> gives the facbook logo a follow come circle which styles with the logo letter      -->
+                </div>
+            </div>
+            <p class="pfoot">©JustA-Call-Away 2025</p>
+        </section>
     </footer>
+
+
+
   </body>
 </html>
