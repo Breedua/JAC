@@ -1,18 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0 auto;
     font-family: Verdana, 'Segoe UI', Tahoma, Geneva, sans-serif;
-    background: url('./photos/img.webp') no-repeat center center fixed;
-    background-size: cover;
+    background: url('./photos&videos/african-male-plumber-fixing-sink-pipe-kitchen-124519826.webp') no-repeat center center fixed;
+    /* background-size: cover; */
 }
 
 
 header {
-    Background-image: linear-gradient(270deg, #23464d 30%, #6fffe9 70%);
+    background-color: aliceblue;
+    /* Background-image: linear-gradient(270deg, #23464d 30%, #6fffe9 70%); */
     padding: 0rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 10px 10px 20px #324438ad;
+    height: 100px;
 }
 
 nav {
@@ -82,9 +88,14 @@ nav a:hover {
 }
 
 .profile-text {
-    color: rgb(9, 7, 7);
+    color: rgb(61, 51, 51);
     font-weight: 500;
     font-size: 14px;
+    font-weight: bold;
+}
+
+.one {
+    text-decoration: none;
 }
 
 .overlay {
@@ -109,7 +120,8 @@ main {
 h1 {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: white;
+    color: rgb(32, 40, 39);
+    margin-bottom: 30px;
 }
 
 .button-container {
@@ -141,23 +153,114 @@ h1 {
 }
 
 
-footer {
-    background-color: #ffffff;
-    color: #333;
-    padding: 20px 0;
+/* styling the foooter */
+.footer {
+   margin: 10px;
+   display: flex;
+   flex: 1 1 100%;
+   justify-content: space-between;
+   margin-left: 100px; 
+   margin: 0 auto;
+   margin-top: 80px;
+   padding: 40px;
+   cursor: pointer;
+   background: #071629;
+   /* background-color: rgba(0, 0, 0, 0.826); */
+   text-align: center;
+   width: 90%;
+}
+
+.footer li {
+   list-style: none;
+   padding: 15px 15px;
+   text-decoration: none;
+}
+
+.footer li a:hover {
+   color: #19876f;
+}
+
+.footer1, .footer2, .footer3 {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer1 {
+   color: rgba(255, 255, 255, 0.811);
+   font-weight: bolder;
+   font-size: 18px;
+   text-align: center;
+}
+
+.f1 a {
+   color: rgba(255, 255, 255, 0.358);
+   font-size: 14px;
+}
+
+.footer2 {
+    color: rgba(255, 255, 255, 0.709);
+    font-weight: bolder;
+    font-size: 18px;
     text-align: center;
-    font-size: 14px;
-    margin-top: 100px;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
 }
 
-footer a {
-    color: #040505;
-    text-decoration: none;
-    margin: 0 15px;
-    padding: auto;
+.f2 a {
+    color: rgba(255, 255, 255, 0.358);
+    font-size: 14px;  
 }
 
-footer a:hover {
-    color: #6fffe9;
+.footer3 {
+    color: rgba(255, 255, 255, 0.709);
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+}
+
+.f3 a {
+    color: rgba(255, 255, 255, 0.358);
+    font-size: 14px;  
+}
+
+.footer4 {
+    color: rgba(255, 255, 255, 0.709);
+    font-weight: bolder;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.f4 a {
+color: white;
+}
+
+.f4 li  {
+   display: flex;
+   justify-content: center;
+}
+
+.f4 li a {
+   padding: 10px;
+   background-color:#19876f;
+   border-radius: 50px;
+   margin: 5px;
+   color: white;
+}
+
+/* changing the highlight colour */
+*::selection {
+    background: rgba(28, 9, 3, 0.896); 
+}
+ 
+/* changing the hover colour of the footer to fit the theme */
+.footer li a:hover {
+    color:#19876f;
+}
+
+.line{
+   position: absolute;
+}
+
+.pfoot {
+   color: #dadce3;
 }

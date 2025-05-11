@@ -6,12 +6,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,18 +22,78 @@ body {
     margin: 0 auto;   
 }
 
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+/* styling the header */
+.header {
+   display: flex;
+   margin: 10px;
+   padding: 5px;
+   margin-top: -46px;
+   border: 1px solid rgb(77, 70, 58);
+   box-shadow: 10px 10px 20px #324438ad;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bolder;
+   background-color: aliceblue;
+   width: 100%;
+   text-align: center;
 }
 
-.heading {
-    color: green;
+.header-nav {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
 }
+
+.logo {
+   margin: 10px;
+   height: 50px;
+   width: 130px;
+   border-radius: 15%;
+   margin-top: 7px;
+   margin-left: 30px;
+}
+
+.header1 {
+   display: flex;
+}
+
+.header1 li {
+   list-style: none;
+   padding: 12px;
+}
+
+.header1 li a {
+   text-decoration: none;
+   color: black;
+   padding: 30px;
+}
+
+.header1 li a:hover {
+   color: #a0aeb2ca;
+}
+
+.profile {
+   margin-right: 40px;
+}
+
+.profile img{
+   width: 70px;
+   height: 50px;
+   margin: 10px;
+   margin-top: 10px;
+}
+
+a, .pcaption {
+   margin-top: -20px;
+   color: black;
+   text-decoration: none;
+   padding: 10px;
+} 
+
+.pcaption:hover {
+   color:#0c342c;
+}
+/* Header styling complete */
 
 .container {
   height: 600px;
@@ -72,8 +132,8 @@ header {
     width: 150px;
     border-radius: 50px;
     background-image: linear-gradient(to right,
-            rgb(255, 195, 110),
-            rgb(255, 146, 91));
+             rgb(38, 85, 77),
+            rgb(109, 146, 138));
     position: absolute;
     top: 20px;
     left: 100px;
@@ -146,7 +206,8 @@ header {
 }
 
 .request-btn {
-    background-image: linear-gradient(to right, rgb(255, 195, 110), rgb(255, 146, 91));
+    background-image: linear-gradient(to right,  rgb(38, 85, 77),
+            rgb(109, 146, 138));
     border: none;
     padding: 8px 15px;
     border-radius: 20px;
@@ -268,4 +329,116 @@ header {
         width: 130px;
         font-size: 19px;
     }
+}
+
+
+/* styling the foooter */
+.footer {
+   margin: 10px;
+   display: flex;
+   flex: 1 1 100%;
+   justify-content: space-between;
+   margin-left: 140px; 
+   margin: 0 auto;
+   margin-top: 80px;
+   padding: 40px;
+   cursor: pointer;
+   background: #071629;
+   /* background-color: rgba(0, 0, 0, 0.826); */
+   text-align: center;
+   width: 90%;
+}
+
+.footer li {
+   list-style: none;
+   padding: 15px 15px;
+   text-decoration: none;
+}
+
+.footer li a:hover {
+   color: #19876f;
+}
+
+.footer1, .footer2, .footer3 {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer1 {
+   color: rgba(255, 255, 255, 0.811);
+   font-weight: bolder;
+   font-size: 18px;
+   text-align: center;
+}
+
+.f1 a {
+   color: rgba(255, 255, 255, 0.358);
+   font-size: 14px;
+}
+
+.footer2 {
+    color: rgba(255, 255, 255, 0.709);
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+}
+
+.f2 a {
+    color: rgba(255, 255, 255, 0.358);
+    font-size: 14px;  
+}
+
+.footer3 {
+    color: rgba(255, 255, 255, 0.709);
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+}
+
+.f3 a {
+    color: rgba(255, 255, 255, 0.358);
+    font-size: 14px;  
+}
+
+.footer4 {
+    color: rgba(255, 255, 255, 0.709);
+    font-weight: bolder;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.f4 a {
+color: white;
+}
+
+.f4 li  {
+   display: flex;
+   justify-content: center;
+}
+
+.f4 li a {
+   padding: 10px;
+   background-color:#19876f;
+   border-radius: 50px;
+   margin: 5px;
+}
+
+/* changing the highlight colour */
+*::selection {
+    background: rgba(28, 9, 3, 0.896); 
+}
+ 
+/* changing the hover colour of the footer to fit the theme */
+.footer li a:hover {
+    color:#19876f;
+}
+
+.line{
+   position: absolute;
+}
+
+.pfoot {
+   color: #dadce3;
 }
