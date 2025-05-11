@@ -6,6 +6,7 @@
 
 /* Remove margin/padding */
 body {
+    background-color: aliceblue;
   height: 100%;
   width: 100%;
   font-family: Verdana, 'open sans' sans-serif, Geneva, Tahoma ;
@@ -32,8 +33,7 @@ body {
   height: 120vh;
   overflow: hidden;
   object-fit: cover;
-  /* z-index: -1;  */
-  /* Push behind content */
+  z-index: -1; /* Push behind content */
 }
 
 /* styling the header */
@@ -83,7 +83,7 @@ body {
 }
 
 .header1 li a:hover {
-   color:#0a4b3d;
+   color: #a0aeb2ca;
 }
 
 .header-btn {
@@ -188,6 +188,7 @@ h1 {
  .block {
    margin: 30px;
    margin-top: 30px;
+   background: #0e322a;
    border: 2px solid #dadce3;
    color: #fafafa;
    cursor: pointer;
@@ -206,6 +207,10 @@ h1 {
    color:#19876f;
 }
 
+a, .block {
+    text-decoration: none;
+}
+
  .block img {
    width: 20px;
    height: 20px;
@@ -215,9 +220,13 @@ h1 {
    margin-left: 10px;
  }
 
+ .arrow {
+    filter: brightness(0) invert(1);
+}
+
  .reviews{
    position: relative;
-   background-image: url(./photos/Logo.png);
+   background-image: url(./photos&videos/pexels-tima-miroshnichenko-6196678.jpg);
    background-size: cover;
    background-position: center;
    width: 37%;
@@ -236,7 +245,7 @@ h1 {
    top: 0; left: 0;
    width: 100%;
    height: 100%;
-   background-color: rgba(22, 34, 30, 0.85); 
+   background-color: rgba(22, 34, 30, 0.616); 
    z-index: 1;
  }
  
@@ -255,7 +264,7 @@ h1 {
  }
 
 .btn-review {
-   background: #8fd9c0;
+   background: #0e322a;
    border: 1px solid gray ;
    height: 50px;
    width: 100px;
@@ -269,8 +278,368 @@ h1 {
 .btn-review:hover {
    color:#0e322a;
 }
- 
 /* Section 1 done */
 
+
+/* Styling section 2 */
+.section2 {
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   width: 85%;
+   height: 120vh;
+   margin-top: -40px;
+}
+
+.row-h2 {
+   font-size: 50px;
+   font-weight: bolder;
+   text-align: left;
+   margin: 50px;
+   color: rgb(49, 59, 59);
+}
+
+.row {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.column  {
+   text-align: center;
+   box-sizing: border-box;
+   width: 75%;
+   height: 150px;
+   border: 1px solid rgb(77, 70, 58);
+   box-shadow: 10px 10px 20px #324438ad;
+   margin: 30px;
+   background:linear-gradient(270deg, #23464dd5 30%, #6fffe9d7 70%);
+}
+
+.colm-title {
+   font-size: 20px;
+   font-weight: 800;
+   color: rgb(59, 61, 60);
+   margin: 20px;
+   font-weight: bolder;
+}
+
+.column1 {
+   font-size: 18px;
+   color: rgb(18, 70, 121);
+   font-weight: bold;
+}
+
+.colm-span {
+    background: #c9eef6a8;
+   border: 1px solid rgb(77, 70, 58);
+   box-shadow: 10px 10px 20px #324438ad;
+   margin: 50px;
+   cursor: pointer;
+   width: 300px;     
+   height: 48px;       
+   padding: 10px 40px 10px 12px;
+   align-items: center;
+   border-radius: 5px;
+   box-sizing: border-box;
+   padding: 10px 40px 10px 12px;
+   margin-top: 40px;
+}
+
+
+.colm-span:hover {
+   color:#083d32;
+}
+
+ /* Styling section3 */
+
+ .section3 {
+    background: rgb(251, 241, 241);
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 80px;
+ }
+
+ /* styling tthe section3 h2 */
+ .section3 h2 {
+    font-size: 50px;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.612);
+ }
+
+ /* styling the middle word of the h2 text green */
+ .section3 h2 span {
+    color: #19876f;
+ }
+
+ /* styling the sub parent div section3-1 and putting the contents of the 4 divs inside in a row */
+ .section3-1 {
+    width:85%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    margin: 50px;
+    margin-left: 100px;
+ }
+
+ .divs4 {
+    flex: 1;
+    max-width: 25%;
+    margin: 20px;
+ }
+
+/* styling the h3 in divs4 */
+.divs4 h3 {
+   color: black;
+   font-size: 18px;
+   font-weight: bold;
+   margin: 7px;
+}
+
+/* styling the p in divs4 */
+.divs4 p {
+   color: #56575a;
+   font-size: 13px;
+   margin: 7px;
+   line-height: 1.5;
+}
+
+/* styling divs4 h4 and image div */
+.img4 {
+   margin: 7px;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+}
+
+/* styling the h4 alone */
+.img4 h4 {
+   font-size: 13px;
+   color: #19876f;
+   margin-left: 15px;
+   padding: 6px;
+}
+
+ /* arranging all the stars in a row and adding colour */
+ .stars {
+    display: flex;
+    flex-direction: row;
+    color: #19876f;
+    margin: 7px;
+ }
+
+ /* styling the last star with a seperate colour */
+ .stars span {
+   color: #dadadfce;
+ }
+
+ /* styling the last p in .stars */
+ .stars p {
+   color: #19876f;
+   margin-left: 60px;
+   margin-top: -2px;
+}
+
+.divs4 {
+   animation: pulse 0.6s infinite;
+ }
+ 
+ @keyframes pulse {
+   0%, 100% {
+     transform: scale(1);
+   }
+   50% {
+     transform: scale(1.05);
+   }
+ }
+ 
+/* Section3 done and dusted */
+
+/* Styling section 4 */
+
+.section4 {
+   position: relative;
+   background-image: url(/photos&videos/Object.png);
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   width: 85%;
+   height: 120vh;
+   margin-top: 60px;
+   border-radius: 10px;
+   
+} 
+
+.overlay2 {
+   position: absolute;
+   top: 0; left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(189, 205, 200, 0.367);
+   z-index: 1;
+   border-radius: 10px;
+ } 
+
+.trust, .partner, .partner-txt {
+   position: relative;
+   z-index: 2;
+   text-align: center;
+}
+
+.trust {
+    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.partners {
+   width: 90%;
+   height: 90%;
+   color: #fafafa;
+   background-color: rgba(53, 107, 95, 0.4);
+   box-shadow: 0 0 20px 6px #090b6f68;
+    flex: 1 1 100%;  
+    align-items: cover;
+    justify-content: space-between;
+}
+
+.partner {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+   color: white;
+   text-align: center;
+   width: 30%;
+   height: 20%;
+}
+
+ /* Make sure your text is above the overlay */
+ 
+
+ /* The overlay sits behind the text */
+ .overlay {
+   position: absolute;
+   top: 0; left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(22, 34, 30, 0.616); 
+   z-index: 1;
+ }
+ 
+
+/* styling the foooter */
+.footer {
+   margin: 10px;
+   display: flex;
+   flex: 1 1 100%;
+   justify-content: space-between;
+   margin-left: 140px; 
+   margin: 0 auto;
+   margin-top: 80px;
+   padding: 40px;
+   cursor: pointer;
+   background-color: rgba(0, 0, 0, 0.826);
+   text-align: center;
+}
+
+.footer li {
+   list-style: none;
+   padding: 15px 15px;
+   text-decoration: none;
+}
+
+.footer li a:hover {
+   color: #19876f;
+}
+
+.footer1, .footer2, .footer3 {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer1 {
+   color: rgba(255, 255, 255, 0.811);
+   font-weight: bolder;
+   font-size: 18px;
+   text-align: center;
+}
+
+.f1 a {
+   color: rgba(255, 255, 255, 0.358);
+   font-size: 14px;
+}
+
+.footer2 {
+    color: rgba(255, 255, 255, 0.709);
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+}
+
+.f2 a {
+    color: rgba(255, 255, 255, 0.358);
+    font-size: 14px;  
+}
+
+.footer3 {
+    color: rgba(255, 255, 255, 0.709);
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+}
+
+.f3 a {
+    color: rgba(255, 255, 255, 0.358);
+    font-size: 14px;  
+}
+
+.footer4 {
+    color: rgba(255, 255, 255, 0.709);
+    font-weight: bolder;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.f4 a {
+color: white;
+}
+
+.f4 li  {
+   display: flex;
+   justify-content: center;
+}
+
+.f4 li a {
+   padding: 10px;
+   background-color:#19876f;
+   border-radius: 50px;
+   margin: 5px;
+}
+
+/* changing the highlight colour */
+*::selection {
+    background: rgba(28, 9, 3, 0.896); 
+}
+ 
+/* changing the hover colour of the footer to fit the theme */
+.footer li a:hover {
+    color:#19876f;
+}
+
+.line{
+   position: absolute;
+}
+
+.pfoot {
+   color: #dadce3;
+}
 
 
