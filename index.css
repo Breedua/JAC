@@ -504,19 +504,21 @@ a, .block {
    color: #fafafa;
    background-color: rgba(53, 107, 95, 0.4);
    box-shadow: 0 0 20px 6px #090b6f68;
-    flex: 1 1 100%;  
-    align-items: cover;
-    justify-content: space-between;
+   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; /* space between items */
+  padding: 1rem;
+  align-items: center;
 }
 
 .partner {
-    display: flex;
-    flex-direction: row;
     margin: 30px;
    color: white;
    text-align: center;
    width: 30%;
    height: 20%;
+   padding: 20px;
+  border-radius: 8px;
 }
 
  /* Make sure your text is above the overlay */
