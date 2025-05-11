@@ -101,17 +101,6 @@ body {
 .header-btn:hover {
    color:#0e322a;
 }
-
-
-/* .header, .section1 { */
-  /* position: relative; */
-  /* z-index: 1; */
-   /* On top of video */
-  /* top: 40%;
-  transform: translateY(-50%); */
-/* } */
-
-
 /* Header styling complete */
 
 
@@ -552,113 +541,85 @@ a, .block {
  }
  
 
-/* styling the foooter */
-.footer {
-   margin: 10px;
+/* last section - Styling of the Footer  */
+footer {
+   background: #071629;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 40px;
+}
+
+.last-footer {
+   margin: 14px;
+}
+
+/* arranging the div foot */
+.foot {
    display: flex;
-   flex: 1 1 100%;
-   justify-content: space-between;
-   margin-left: 140px; 
-   margin: 0 auto;
-   margin-top: 80px;
-   padding: 40px;
-   cursor: pointer;
-   background-color: rgba(0, 0, 0, 0.826);
-   text-align: center;
+   flex-direction: row;
+   width: 80%;
+   margin-top: 60px;
+   margin-left: 120px;
+   margin-bottom: 40px;
 }
 
-.footer li {
-   list-style: none;
-   padding: 15px 15px;
-   text-decoration: none;
+/* arranging the svg/logo in footer */
+.foot-logoo {
+     margin: 10px;
+   height: 50px;
+   width: 130px;
+   border-radius: 15%;
 }
 
-.footer li a:hover {
-   color: #19876f;
+.footlogo {
+    height: 50px;
+   width: 130px;
 }
 
-.footer1, .footer2, .footer3 {
-   display: flex;
-   flex-direction: column;
-}
-
-.footer1 {
-   color: rgba(255, 255, 255, 0.811);
+/* styling the company name in the footer */
+.foot h5 {
+   color: aliceblue;
+   font-size: 16px;
+   margin: 20px;
    font-weight: bolder;
-   font-size: 18px;
-   text-align: center;
-}
+   white-space: nowrap;
+} 
 
-.f1 a {
-   color: rgba(255, 255, 255, 0.358);
-   font-size: 14px;
-}
-
-.footer2 {
-    color: rgba(255, 255, 255, 0.709);
-    font-weight: bolder;
-    font-size: 18px;
-    text-align: center;
-}
-
-.f2 a {
-    color: rgba(255, 255, 255, 0.358);
-    font-size: 14px;  
-}
-
-.footer3 {
-    color: rgba(255, 255, 255, 0.709);
-    font-weight: bolder;
-    font-size: 18px;
-    text-align: center;
-}
-
-.f3 a {
-    color: rgba(255, 255, 255, 0.358);
-    font-size: 14px;  
-}
-
-.footer4 {
-    color: rgba(255, 255, 255, 0.709);
-    font-weight: bolder;
-    font-size: 18px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.f4 a {
-color: white;
-}
-
-.f4 li  {
+/* arranging the icons in footer */
+.icons {
+   color: white;
+   margin-left: 440px;
    display: flex;
-   justify-content: center;
+   flex-direction: row;
 }
 
-.f4 li a {
+/* more arrangements for the icons in the footer and giving them more circles */
+.icons i {
    padding: 10px;
-   background-color:#19876f;
-   border-radius: 50px;
-   margin: 5px;
 }
 
-/* changing the highlight colour */
-*::selection {
-    background: rgba(28, 9, 3, 0.896); 
-}
- 
-/* changing the hover colour of the footer to fit the theme */
-.footer li a:hover {
-    color:#19876f;
-}
+/* experimenting styling the icons to be centered in a circle */
+.icon-wrapper {
+   display: inline-flex; /* Aligns the icons inline */
+   margin: 9px;
+   justify-content: center; /* Centers the icon horizontally */
+   align-items: center; /* Centers the icon vertically */
+   width: 22px; /* Adjust the size of the circle */
+   height: 22px; /* Make it a perfect circle */
+   background-color: white; /* Fill the area with white */
+   border-radius: 50%; /* Creates the circular shape */
+   color: #1f2021; /* Icon or text color */
+   font-size: 14px; /* Adjust the font size of the icon */
+ }
 
-.line{
-   position: absolute;
-}
-
+/* Arranging and styling the last p which is the copyright and logo */
 .pfoot {
-   color: #dadce3;
-}
+   color: #dce0e369;
+   text-align: center;
+   margin-right: 20px;
+   margin-bottom: 30px;
+}  
+/* Footer section done and dusted */
 
 
